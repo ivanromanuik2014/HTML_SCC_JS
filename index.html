@@ -1,38 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-    />
-    <title>Fishing Tours</title>
-    <link
-      rel="shortcut icon"
-      href="img/header/shortcut-icon.webp"
-      type="image/x-icon"
-    />
-    <script
-      src="https://unpkg.com/htmx.org@1.9.10"
-      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
-      crossorigin="anonymous"
-    ></script>
-  </head>
 
-  <body>
-    <header>
-      <nav
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.header-nav.partial.html"
-      ></nav>
-    </header>
-    <main>
-      <section
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.our-numbers.partial.html"
-      ></section>
-    </main>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Fishing Tours</title>
+  <link rel="shortcut icon" href="img/header/shortcut-icon.webp" type="image/x-icon" />
+  <script src="https://unpkg.com/htmx.org@1.9.10"
+    integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <nav data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.header-nav.partial.html"></nav>
+  </header>
+  <main>
+    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.our-numbers.partial.html"></section>
+    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.about-us.partial.html"></section>
+  </main>
+</body>
+
 </html>
