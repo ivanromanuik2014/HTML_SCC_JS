@@ -1,3 +1,25 @@
-<section class="contact-us">
-    
+<section class="contact-us" id="contact-us">
+    <address class="contacts">
+        <h2>Contacts</h2>
+        <p>Contact us to reserve a spot or ask any question!</p>
+        <div class="contacts-conteiner-left">
+            <p class="contacts-text-bold">Address</p>
+            <p class="contacts-text-bold">Hours</p>
+            <p class="contacts-text-bold">contacts</p>
+        </div>
+        <div class="contacts-conteiner-right">
+            <p class="contacts-text-small">709-799 Balboa Ct<br>San Diego, CA 92109, USA</p>
+            <p class="contacts-text-small">Monday-Friday: 17 AM - 9 PM<br>Saturday: 10:00 AM - 9:00 PM</p>
+            <p class="contacts-text-small">+1 (234) 567 89 00<br>Fishing@email.com</p>
+        </div>
+    </address>
+    <div class="contacts-us-form">
+        <form action="/submit-form" method="post">
+            <input type="text" name="name" placeholder="Enter your full name*" required>
+            <input type="tel" name="phone" placeholder="Enter your phone number*" required>            
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <textarea name="message" placeholder="type your message" required></textarea>
+            <button type="submit">Request a quote</button>
+        </form>
+    </div>
 </section>
