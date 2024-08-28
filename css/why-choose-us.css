@@ -1,0 +1,12 @@
+@media (max-width: 425px) {
+    .why-choose-background {
+        background-image: url("/img/why-choose-us/whu-choose-us-background.webp");
+        background-size: cover;
+        position: relative;
+        width: 100%;
+     }
+}
+
+@media (min-width: 425px) and (max-width: 1024px) {}
+
+@media (min-width: 1024px) {}
