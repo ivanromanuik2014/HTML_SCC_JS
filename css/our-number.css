@@ -4,7 +4,58 @@
         background-size: cover;
         position: relative;
         width: 100%;
-     }
+        padding: 5px 24px 90px 24px;
+    }
+
+
+    .our-numbers-text-container {
+        padding: 0 15px;
+        text-align: center;
+    }
+
+    .our-numbers-text-container h2 {
+        font-size: 40px;
+        font-family: var(--title-font-family);
+        color: var(--our-number-title-color);
+        font-weight: 700;
+        letter-spacing: -0.84px;
+    }
+
+    .our-numbers-text-container p {
+        font-size: 18px;
+        font-family: var(--text-font-family);
+        color: var(--our-number-text-color);
+        font-weight: 500;
+        line-height: 28.8px;
+        margin-top: 40px;
+    }
+
+    .our_numbers-card-container img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        margin-top: 20px;
+    }
+
+    .our_numbers-card-container h3 {
+        font-size: 40px;
+        font-family: var(--title-font-family);
+        color: var(--our-number-title-color);
+        font-weight: 700;
+        letter-spacing: -0.84px;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .our_numbers-card-container p {
+        font-size: 18px;
+        font-family: var(--text-font-family);
+        color: var(--our-number-text-color);
+        font-weight: 500;
+        line-height: 28.8px;
+        margin-top: 30px;
+        text-align: center;
+    }
 }
 
 @media (min-width: 425px) and (max-width: 1024px) {}

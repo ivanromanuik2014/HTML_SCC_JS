@@ -22,6 +22,18 @@ img {
     --header-nav-bottom-hover-text-color: #1C2025;
     --header-nav-bottom-active-background-color:#dae436;
     --header-nav-bottom-active-text-color: #1C2025;
+    --our-number-title-color: #ffffff;
+    --our-number-text-color: #ffffff;
+    --why-choose-us-title-color: #ffffff;
+    --why-choose-us-text-color: #ffffff;
+    --why-choose-us-border-color: #dae436;
+    --why-choose-us-img-background-color: #dae436;
+    --about-us-title-color: #dae436;
+    --about-us-dark-text-color: #838383;
+    --about-us-light-text-color: #ffffff;
+    --about-us-reference-background-color: #ffffff;
+    --our-stoty-title-color: #1c2025;
+    --our-stoty-text-color: #838383;
 
 
     /*fonts*/
