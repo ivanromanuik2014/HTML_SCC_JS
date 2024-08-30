@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 *,
 *::after,
@@ -9,34 +9,49 @@
 }
 
 img {
-    display: block;
-  }
+  display: block;
+}
 
-  :root {
-    --header-nav-title-color: #ffffff;
-    --header-nav-text-color: #ffffff;
-    --header-nav-bottom-text-color: #1C2025;
-    --header-nav-bottom-border-color: #dae436;
-    --header-nav-bottom-background-color: #dae436;
-    --header-nav-bottom-hover-background-color: #ffffff;
-    --header-nav-bottom-hover-text-color: #1C2025;
-    --header-nav-bottom-active-background-color:#dae436;
-    --header-nav-bottom-active-text-color: #1C2025;
-    --our-number-title-color: #ffffff;
-    --our-number-text-color: #ffffff;
-    --why-choose-us-title-color: #ffffff;
-    --why-choose-us-text-color: #ffffff;
-    --why-choose-us-border-color: #dae436;
-    --why-choose-us-img-background-color: #dae436;
-    --about-us-title-color: #dae436;
-    --about-us-dark-text-color: #838383;
-    --about-us-light-text-color: #ffffff;
-    --about-us-reference-background-color: #ffffff;
-    --our-stoty-title-color: #1c2025;
-    --our-stoty-text-color: #838383;
+:root {
+  --header-nav-title-color: #ffffff;
+  --header-nav-text-color: #ffffff;
+  --header-nav-bottom-text-color: #1c2025;
+  --header-nav-bottom-border-color: #dae436;
+  --header-nav-bottom-background-color: #dae436;
+  --header-nav-bottom-hover-background-color: #ffffff;
+  --header-nav-bottom-hover-text-color: #1c2025;
+  --header-nav-bottom-active-background-color: #dae436;
+  --header-nav-bottom-active-text-color: #1c2025;
+  --our-number-title-color: #ffffff;
+  --our-number-text-color: #ffffff;
+  --why-choose-us-title-color: #ffffff;
+  --why-choose-us-text-color: #ffffff;
+  --why-choose-us-border-color: #dae436;
+  --why-choose-us-img-background-color: #dae436;
+  --about-us-title-color: #dae436;
+  --about-us-dark-text-color: #838383;
+  --about-us-light-text-color: #ffffff;
+  --about-us-reference-background-color: #ffffff;
+  --our-stoty-title-color: #1c2025;
+  --our-stoty-text-color: #838383;
+  --pricing-background-color: #ebebeb;
+  --pricing-title-color: #1c2025;
+  --pricing-card-text-color: #ffffff;
+  --pricing-kigs-background-color: #2ebcbf;
+  --pricing-adult-background-color: #4149e4;
+  --pricing-vip-background-color: #00c9e2;
+  --pricing-img-background-color: #d1b31b;
+  --contact-us-bold-text-color: #1c2025;
+  --contact-us-text-color: #838383;
+  --contact-us-form-background: #1c2025a8;
+  --contact-us-form-border-color: #ffffff3b;
+  --contact-us-form-input-background-color: #00000000;
+  --contact-us-form-input-text-color: #ffffff;
+  --contact-us-form-input-placeholder-color: #ffffff;
+  --footer-nav-text-color: #1c2025;
+  --footer-copyright-text-color: #838383;
 
-
-    /*fonts*/
-    --title-font-family: "Montserrat", sans-serif;
-    --text-font-family: "Montserrat", sans-serif;
-  }
+  /*fonts*/
+  --title-font-family: "Montserrat", sans-serif;
+  --text-font-family: "Montserrat", sans-serif;
+}

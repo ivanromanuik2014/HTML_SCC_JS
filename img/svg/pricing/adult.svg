@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" height="100%">
-  <polygon points="27.146,3.778 27.146,46.556 54.294,46.556" fill="currentColor"/>
-  <polygon points="24.524,7.171 5.706,46.556 24.524,46.556" fill="currentColor"/>
-  <polygon points="9.151,49.847 15.115,56.222 28.894,56.222 42.674,56.222 48.638,49.847 28.894,49.847" fill="currentColor"/>
+  <polygon points="27.146,3.778 27.146,46.556 54.294,46.556" fill="white"/>
+  <polygon points="24.524,7.171 5.706,46.556 24.524,46.556" fill="white"/>
+  <polygon points="9.151,49.847 15.115,56.222 28.894,56.222 42.674,56.222 48.638,49.847 28.894,49.847" fill="white"/>
 </svg>
