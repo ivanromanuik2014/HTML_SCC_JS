@@ -1,63 +1,163 @@
-@media (max-width: 425px) {
-    .our-numbers-background {
-        background-image: url("/img/our-number/our-number-background.webp");
-        background-size: cover;
-        position: relative;
-        width: 100%;
-        padding: 5px 24px 90px 24px;
-    }
-
-
-    .our-numbers-text-container {
-        padding: 0 15px;
-        text-align: center;
-    }
-
-    .our-numbers-text-container h2 {
-        font-size: 40px;
-        font-family: var(--title-font-family);
-        color: var(--our-number-title-color);
-        font-weight: 700;
-        letter-spacing: -0.84px;
-    }
-
-    .our-numbers-text-container p {
-        font-size: 18px;
-        font-family: var(--text-font-family);
-        color: var(--our-number-text-color);
-        font-weight: 500;
-        line-height: 28.8px;
-        margin-top: 40px;
-    }
-
-    .our_numbers-card-container img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-        margin-top: 20px;
-    }
-
-    .our_numbers-card-container h3 {
-        font-size: 40px;
-        font-family: var(--title-font-family);
-        color: var(--our-number-title-color);
-        font-weight: 700;
-        letter-spacing: -0.84px;
-        margin-top: 20px;
-        text-align: center;
-    }
-
-    .our_numbers-card-container p {
-        font-size: 18px;
-        font-family: var(--text-font-family);
-        color: var(--our-number-text-color);
-        font-weight: 500;
-        line-height: 28.8px;
-        margin-top: 30px;
-        text-align: center;
-    }
+.our-numbers__background {
+  background-image: url("/img/our-number/our-number-background.webp");
+  background-size: cover;
+  position: relative;
+  width: 100%;
 }
 
-@media (min-width: 425px) and (max-width: 1024px) {}
+.our-numbers__card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-items: center;
+}
 
-@media (min-width: 1024px) {}
+.our-numbers__text-container {
+  padding: 0 15px;
+  text-align: center;
+}
+
+.our-numbers__text-container h2 {
+  font-size: 40px;
+  font-family: var(--title-font-family);
+  color: var(--our-number-title-color);
+}
+
+.our-numbers__text-container p {
+  font-family: var(--text-font-family);
+  color: var(--our-number-text-color);
+  font-weight: 500;
+  line-height: 28.8px;
+  margin-top: 40px;
+}
+
+.our-numbers__card-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-top: 20px;
+  padding: 0 15px;
+}
+
+.our-numbers__card--fish-species h3,
+.our-numbers__card--fishing-spots h3,
+.our-numbers__card--types-of-tours h3 {
+  font-family: var(--title-font-family);
+  color: var(--our-number-title-color);
+  font-weight: 700;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.our-numbers__card--fish-species p,
+.our-numbers__card--fishing-spots p,
+.our-numbers__card--types-of-tours p {
+  font-family: var(--text-font-family);
+  color: var(--our-number-text-color);
+  font-weight: 500;
+  margin-top: 30px;
+  text-align: center;
+}
+
+@media (max-width: 425px) {
+  .our-numbers__background {
+    padding: 5px 24px 90px 24px;
+  }
+
+  .our-numbers__text-container h2 {
+    font-size: 40px;
+    letter-spacing: -0.84px;
+  }
+
+  .our-numbers__text-container p {
+    font-size: 18px;
+    line-height: 28.8px;
+  }
+
+  .our-numbers__card--fish-species h3,
+  .our-numbers__card--fishing-spots h3,
+  .our-numbers__card--types-of-tours h3 {
+    font-size: 40px;
+    letter-spacing: -0.84px;
+  }
+
+  .our-numbers__card--fish-species p,
+  .our-numbers__card--fishing-spots p,
+  .our-numbers__card--types-of-tours p {
+    font-size: 18px;
+    line-height: 28.8px;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 1023px) {
+  .our-numbers__background {
+    padding: 5px 32px 90px 32px;
+  }
+
+  .our-numbers__text-container h2 {
+    font-size: 50px;
+    letter-spacing: -1.05px;
+  }
+
+  .our-numbers__text-container p {
+    font-size: 18px;
+    line-height: 28.8px;
+  }
+
+  .our-numbers__card-container img {
+    width: 45vw;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .our-numbers__card--fish-species h3,
+  .our-numbers__card--fishing-spots h3,
+  .our-numbers__card--types-of-tours h3 {
+    font-size: 50px;
+    letter-spacing: -1.05px;
+  }
+
+  .our-numbers__card--fish-species p,
+  .our-numbers__card--fishing-spots p,
+  .our-numbers__card--types-of-tours p {
+    font-size: 18px;
+    line-height: 28.8px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .our-numbers__background {
+    padding: 5px 40px 90px 40px;
+  }
+
+  .our-numbers__text-container h2 {
+    font-size: 60px;
+    letter-spacing: -1.26px;
+  }
+
+  .our-numbers__text-container p {
+    font-size: 18px;
+    line-height: 28.8px;
+  }
+
+  .our-numbers__card-container img {
+    width: 29vw;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .our-numbers__card--fish-species h3,
+  .our-numbers__card--fishing-spots h3,
+  .our-numbers__card--types-of-tours h3 {
+    font-size: 60px;
+    letter-spacing: -1.26px;
+  }
+
+  .our-numbers__card--fish-species p,
+  .our-numbers__card--fishing-spots p,
+  .our-numbers__card--types-of-tours p {
+    font-size: 18px;
+    line-height: 28.8px;
+  }
+}

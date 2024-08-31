@@ -13,8 +13,9 @@ img {
 }
 
 :root {
-  --header-nav-title-color: #ffffff;
+  --header-nav__title-color: #ffffff;
   --header-nav-text-color: #ffffff;
+  --header-nav-menu-color: #ffffff;
   --header-nav-bottom-text-color: #1c2025;
   --header-nav-bottom-border-color: #dae436;
   --header-nav-bottom-background-color: #dae436;

@@ -1,83 +1,145 @@
-@media (max-width: 425px) {
-
-    .header-nav-background {
-        background-image: url(/img/header/header-background.webp);
-        background-size: cover;
-        background-position: 98% 50%;
-        position: relative;
-        width: 100%;
-    }
-
-    .header-nav-container {
-        display: flex;
-        padding: 30px 24px;
-    }
-
-    .header-nav-logo {
-        justify-self: start;
-        height: 78px;
-        width: 134px;
-        object-fit: contain;
-    }
-
-    .header-nav-content {
-        display: none;
-        justify-content: space-evenly;
-        flex-direction: column;
-    }
-
-    .header-nav-content_text {
-        padding: 90px 25px;
-    }
-
-    .header-nav-title h1 {
-        box-sizing: border-box;
-        font-size: 60px;
-        color: var(--header-nav-title-color);
-        font-family: var(--title-font-family);
-        font-weight: 700;
-        letter-spacing: -1.2px;
-    }
-
-    .header-nav-text p {
-        box-sizing: border-box;
-        font-size: 18px;
-        color: var(--header-nav-text-color);
-        font-family: var(--text-font-family);
-        font-weight: 500;
-        line-height: 28.8px;
-    }
-
-    .header-nav-bottom a {
-        display: inline-block;
-        font-size: 13.2px;
-        text-align: center;
-        color: var(--header-nav-bottom-text-color);
-        font-family: var(--text-font-family);
-        font-weight: 700;
-        padding: 24px 31px;
-        margin: 50px 0 0 0;
-        border: solid 1px var(--header-nav-bottom-border-color);
-        background-color: var(--header-nav-bottom-background-color);
-        cursor: pointer;
-        border-radius: 4px;
-        text-decoration: none;
-        transition: background-color 0.3s, color 0.3s;
-    }
-    
-    /* Стан при наведенні на кнопку */
-    .header-nav-bottom a:hover {
-        background-color: var(--header-nav-bottom-hover-background-color);
-        color: var(--header-nav-bottom-hover-text-color);
-    }
-    
-    /* Стан при натисканні на кнопку */
-    .header-nav-bottom a:active {
-        background-color: var(--header-nav-bottom-active-background-color);
-        color: var(--header-nav-bottom-active-text-color);
-    }
+.header-nav__background {
+  background-image: url(/img/header/header-background.webp);
+  background-size: cover;
+  background-position: 50% 50%;
+  position: relative;
+  width: 100%;
 }
 
-@media (min-width: 425px) and (max-width: 1024px) {}
+.header-nav__container {
+  display: flex;
+  padding: 30px 24px;
+}
 
-@media (min-width: 1024px) {}
+.header-nav__logo {
+  justify-self: start;
+  height: 78px;
+  width: 134px;
+  object-fit: contain;
+}
+
+.header-nav__menu {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.header-nav__link {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+.header-nav__link a {
+  font-family: var(--text-font-family);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--header-nav-menu-color);
+}
+
+.header-nav__link li::marker {
+  list-style: none; /* Прибирає маркери у сучасних браузерах */
+}
+
+.header-nav__text {
+  padding: 90px 25px;
+}
+
+.header-nav__title h1 {
+  box-sizing: border-box;
+  font-size: 60px;
+  color: var(--header-nav__title-color);
+  font-family: var(--title-font-family);
+  font-weight: 700;
+  letter-spacing: -1.2px;
+}
+
+.header-nav__description p {
+  box-sizing: border-box;
+  font-size: 18px;
+  color: var(--header-nav-text-color);
+  font-family: var(--text-font-family);
+  font-weight: 500;
+  line-height: 28.8px;
+}
+
+.header-nav__bottom a {
+  display: inline-block;
+  font-size: 13.2px;
+  text-align: center;
+  color: var(--header-nav-bottom-text-color);
+  font-family: var(--text-font-family);
+  font-weight: 700;
+  padding: 24px 31px;
+  margin: 50px 0 0 0;
+  border: solid 1px var(--header-nav-bottom-border-color);
+  background-color: var(--header-nav-bottom-background-color);
+  cursor: pointer;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Стан при наведенні на кнопку */
+.header-nav__bottom a:hover {
+  background-color: var(--header-nav-bottom-hover-background-color);
+  color: var(--header-nav-bottom-hover-text-color);
+}
+
+/* Стан при натисканні на кнопку */
+.header-nav__bottom a:active {
+  background-color: var(--header-nav-bottom-active-background-color);
+  color: var(--header-nav-bottom-active-text-color);
+}
+
+@media (max-width: 425px) {
+  .header-nav__background {
+    background-position: 98% 50%;
+  }
+
+  .header-nav__menu {
+    display: none;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 1023px) {
+  .header-nav__background {
+    background-position: 100% 50%;
+  }
+
+  .header-nav__title h1 {
+    box-sizing: border-box;
+    font-size: 76px;
+    letter-spacing: -1.52px;
+  }
+
+  .header-nav__menu {
+    display: none;
+  }
+  .header-nav__text {
+    padding: 95px 45px 255px 45px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .header-nav__background {
+    background-position: 100% 50%;
+  }
+
+  .header-nav__title h1 {
+    box-sizing: border-box;
+    font-size: 92px;
+    letter-spacing: -1.84px;
+  }
+
+  .header-nav__text {
+    padding: 70px 150px 365px 120px;
+  }
+
+  .header-nav__container {
+    display: flex;
+    padding: 30px 150px 15px 120px;
+  }
+}
