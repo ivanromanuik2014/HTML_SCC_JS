@@ -55,4 +55,7 @@ img {
   /*fonts*/
   --title-font-family: "Montserrat", sans-serif;
   --text-font-family: "Montserrat", sans-serif;
+
+  /*size*/
+  --max-content-size: 1200px;
 }

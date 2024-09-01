@@ -5,17 +5,21 @@
   width: 100%;
 }
 
+.our-numbers__text-container {
+  padding: 0 15px;
+  text-align: center;
+  max-width: var( --max-content-size);
+  margin: auto;
+}
+
 .our-numbers__card-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   justify-items: center;
-}
-
-.our-numbers__text-container {
-  padding: 0 15px;
-  text-align: center;
+  max-width: var( --max-content-size);
+  margin: auto;
 }
 
 .our-numbers__text-container h2 {

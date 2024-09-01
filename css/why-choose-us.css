@@ -8,6 +8,8 @@
 .why-choose__title-container {
   text-align: center;
   padding: 0 15px;
+  margin: auto;
+  max-width: var( --max-content-size);
 }
 
 .why-choose__title-container h2 {
@@ -30,6 +32,8 @@
   justify-content: space-evenly;
   flex-wrap: wrap;
   flex-direction: row;
+  margin: auto;
+  max-width: var( --max-content-size);
 }
 
 .why-choose__card-item {
@@ -37,7 +41,7 @@
   flex-direction: column;
   justify-content: center;
   justify-items: center;
-  padding: 0 20px;
+  padding: 0 14px;
 }
 
 .why-choose__card-item-img-container img {
@@ -88,8 +92,26 @@
     font-size: 50px;
     letter-spacing: -1.05px;
   }
+  
+  .why-choose__card-item-img-container {
+    width: 100px;
+    height: 100px;
+  }
+
 }
 
 @media (min-width: 1024px) and (max-width: 1440px) {
-  /* Additional styles can be added here */
+  .why-choose__background {
+    padding: 35px 40px 110px 40px;
+  }
+
+  .why-choose__title-container h2 {
+    font-size: 60px;
+    letter-spacing: -1.26px;
+  }
+  
+  .why-choose__card-item-img-container {
+    width: 100px;
+    height: 100px;
+  }
 }

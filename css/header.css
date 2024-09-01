@@ -9,6 +9,8 @@
 .header-nav__container {
   display: flex;
   padding: 30px 24px;
+  max-width: var( --max-content-size);
+  margin: auto;
 }
 
 .header-nav__logo {
@@ -45,6 +47,8 @@
 
 .header-nav__text {
   padding: 90px 25px;
+  max-width: var( --max-content-size);
+  margin: auto;
 }
 
 .header-nav__title h1 {
