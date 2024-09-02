@@ -130,7 +130,7 @@
   }
 }
 
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 1024px) {
   .our-numbers__background {
     padding: 5px 40px 90px 40px;
   }

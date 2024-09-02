@@ -1,56 +1,63 @@
 <section class="contact-us" id="contact-us">
-  <address class="contacts">
-    <h2>Contacts</h2>
-    <p>Contact us to reserve a spot or ask any question!</p>
-    <div class="contacts-conteiner">
-      <div class="contacts-conteiner-item">
-        <p class="contacts-text-bold">Address</p>
-        <p class="contacts-text-small">
-          709-799 Balboa Ct<br />San Diego, CA 92109, USA
-        </p>
-      </div>
-      <div class="contacts-conteiner-item">
-        <p class="contacts-text-bold">Hours</p>
-        <p class="contacts-text-small">
-          Monday-Friday: 17 AM - 9 PM<br />Saturday: 10:00 AM - 9:00 PM
-        </p>
-      </div>
-      <div class="contacts-conteiner-item">
-        <p class="contacts-text-bold">contacts</p>
-        <p class="contacts-text-small">
-          +1 (234) 567 89 00<br />Fishing@email.com
-        </p>
+  <div class="contact-us__container">
+    <div class="contact-us__left-block">
+      <h2 class="contact-us__title">Contacts</h2>
+      <p class="contact-us__description">Contact us to reserve a spot or ask any question!</p>
+      <div class="contact-us__contacts-container">
+        <div class="contact-us__contacts-item">
+          <p class="contact-us__text-bold">Address</p>
+          <p class="contact-us__text-small">
+            709-799 Balboa Ct<br />San Diego, CA 92109, USA
+          </p>
+        </div>
+        <div class="contact-us__contacts-item">
+          <p class="contact-us__text-bold">Hours</p>
+          <p class="contact-us__text-small">
+            Monday-Friday: 17 AM - 9 PM<br />Saturday: 10:00 AM - 9:00 PM
+          </p>
+        </div>
+        <div class="contact-us__contacts-item">
+          <p class="contact-us__text-bold">Contacts</p>
+          <p class="contact-us__text-small">
+            +1 (234) 567 89 00<br />Fishing@email.com
+          </p>
+        </div>
       </div>
     </div>
-  </address>
-  <div class="contacts-us-form">
-    <div class="cpntacts-us-form container">
-      <form action="/submit-form" method="post">
-        <input
-          type="text"
-          name="name"
-          placeholder="Enter your full name*"
-          required
-        />
-        <input
-          type="tel"
-          name="phone"
-          placeholder="Enter your phone number*"
-          required
-        />
-        <input
-          type="email"
-          name="email"
-          placeholder="Enter your email"
-          required
-        />
-        <textarea
-          name="message"
-          placeholder="type your message"
-          required
-        ></textarea>
-        <button type="submit">Request a quote</button>
-      </form>
+    <div class="contact-us__right-block">
+      <div class="contact-us__form-container">
+        <form action="/submit-form" method="post" id="contact-form" class="contact-us__form">
+          <input
+            type="text"
+            name="name"
+            placeholder="Enter your full name*"
+            required
+            class="contact-us__input"
+          />
+          <input
+            type="tel"
+            name="phone"
+            placeholder="Enter your phone number*"
+            required
+            class="contact-us__input"
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+            class="contact-us__input"
+          />
+          <textarea
+            name="message"
+            placeholder="Type your message"
+            rows="4"
+            required
+            class="contact-us__textarea"
+          ></textarea>
+          <button type="submit" class="contact-us__button">Request a quote</button>
+        </form>
+      </div>
     </div>
   </div>
 </section>

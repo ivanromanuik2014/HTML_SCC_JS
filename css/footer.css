@@ -1,46 +1,56 @@
-@media (max-width: 425px) {
-    footer img {
-        width: 132px;
-        height: auto;
-        margin: 40px auto;
-    }
-
-    .footer-navigation {
-        display: flex;
-        flex-direction: column;
-        justify-items: center;
-        gap: 15px;
-        margin-bottom: 15px;
-    }
-
-    .footer-navigation a {
-        font-family: var(--text-font-family);
-        font-size: 16px;
-        font-weight: 500;
-        color: var(--footer-nav-text-color);
-        text-decoration: none;
-        text-align: center;
-    }
-
-    .footer-copyright {
-        display: flex;
-        flex-direction: column;
-        justify-items: center;
-        gap: 10px;
-        margin: 20px 0;
-    }
-
-    .footer-copyright p {
-        font-family: var(--text-font-family);
-        font-size: 12px;
-        line-height: 20.04px;
-        font-weight: 700;
-        text-align: center;
-        color: var(--footer-copyright-text-color);
-
-    }
+.footer {
+  max-width: var(--max-content-size);
+  margin: auto;
 }
 
-@media (min-width: 425px) and (max-width: 1024px) {}
+.footer__logo img {
+  width: 132px;
+  height: auto;
+  margin: 40px auto;
+}
 
-@media (min-width: 1024px) {}
+.footer__navigation {
+  display: flex;
+  justify-content: center; /* Вирівнює навігацію по центру */
+}
+
+.footer__nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__nav-list a {
+  font-family: var(--text-font-family);
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--footer-nav-text-color);
+}
+
+.footer__copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.footer__copyright-text {
+  font-family: var(--text-font-family);
+  font-size: 12px;
+  line-height: 20.04px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--footer-copyright-text-color);
+}
+
+@media (min-width: 500px) {
+  .footer__nav-list {
+    flex-direction: row;
+    gap: 15px; /* Між елементами списку */
+  }
+}

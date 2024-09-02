@@ -119,15 +119,16 @@
     letter-spacing: -1.52px;
   }
 
-  .header-nav__menu {
-    display: none;
+  .header-nav__item {
+    list-style: none;
   }
+  
   .header-nav__text {
     padding: 95px 45px 255px 45px;
   }
 }
 
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 1024px) {
   .header-nav__background {
     background-position: 100% 50%;
   }

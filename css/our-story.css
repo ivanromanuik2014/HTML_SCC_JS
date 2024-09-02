@@ -95,13 +95,13 @@
   }
 }
 
-@media (min-width: 901px) and (max-width: 1440px) {
+@media (min-width: 901px) {
   .our-history__card-item {
     flex-basis: 25%;
   }
 }
 
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 1024px) {
   .our-history__content {
     padding: 100px 40px 0 40px;
   }

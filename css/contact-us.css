@@ -1,133 +1,206 @@
+.contact-us {
+  background-image: url(/img/contact-us/contact-us-backgroun.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.contact-us__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-items: center;
+  flex-direction: column;
+  max-width: var(--max-content-size);
+  margin: auto;
+}
+
+.contact-us__left-block {
+  display: flex;
+  float: right;
+  flex-direction: column;
+  font-family: var(--text-font-family);
+  gap: 30px;
+  padding: 15px;
+  max-width: 350px;
+  margin: auto;
+}
+
+.contact-us__right-block {
+  display: flex;
+  float: right;
+  flex-wrap: wrap;
+  justify-content: start;
+  gap: 35px;
+  font-style: normal;
+  font-family: var(--text-font-family);
+  padding: 15px;
+}
+
+.contact-us__title {
+  font-weight: 700;
+  line-height: 44px;
+  color: var(--contact-us-bold-text-color);
+}
+
+.contact-us__description {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28.8px;
+  color: var(--contact-us-text-color);
+}
+
+.contact-us__contacts-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-us__contacts-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-us__text-bold {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 30.8px;
+  color: var(--contact-us-bold-text-color);
+}
+
+.contact-us__text-small {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 25.6px;
+  color: var(--contact-us-text-color);
+}
+
+.contact-us__form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background-color: var(--contact-us-form-background);
+  background-repeat: no-repeat;
+  padding: 40px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 380px;
+}
+
+.contact-us__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact-us__input,
+.contact-us__textarea {
+  box-sizing: border-box;
+  padding: 15px;
+  border: none;
+  border-bottom: 2px solid var(--contact-us-form-border-color);
+  background-color: var(--contact-us-form-input-background-color);
+  font-size: 16px;
+  font-family: var(--text-font-family);
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--contact-us-form-input-text-color);
+  width: 100%;
+}
+
+.contact-us__input::placeholder,
+.contact-us__textarea::placeholder {
+  color: var(--contact-us-form-input-placeholder-color);
+  opacity: 0.3; /* Змінює прозорість placeholder */
+}
+
+.contact-us__button {
+  display: inline-block;
+  font-size: 13.2px;
+  text-align: center;
+  color: var(--header-nav-bottom-text-color);
+  font-family: var(--text-font-family);
+  font-weight: 700;
+  padding: 24px 31px;
+  margin: 50px 0 0 0;
+  border: solid 1px var(--header-nav-bottom-border-color);
+  background-color: var(--header-nav-bottom-background-color);
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Стан при наведенні на кнопку */
+.contact-us__button:hover {
+  background-color: var(--header-nav-bottom-hover-background-color);
+  color: var(--header-nav-bottom-hover-text-color);
+}
+
+/* Стан при натисканні на кнопку */
+.contact-us__button:active {
+  background-color: var(--header-nav-bottom-active-background-color);
+  color: var(--header-nav-bottom-active-text-color);
+}
+
 @media (max-width: 425px) {
-  .contact-us {
-    padding: 90px 24px;
-    display: flex;
-    flex-wrap: wrap;
-    background-image: url(/img/contact-us/contact-us-backgroun.webp);
-    background-size: cover;
+  .contact-us__container {
+    flex-direction: column;
+    padding: 55px 24px 90px 24px;
+    gap: 40px;
   }
 
-  .contacts {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: start;
-    gap: 35px;
-    font-style: normal;
-    font-family: var(--text-font-family);
-  }
-
-  .contacts h2 {
+  .contact-us__title {
     font-size: 40px;
-    font-weight: 700;
-    line-height: 44px;
     letter-spacing: -0.84px;
-    color: var(--contact-us-bold-text-color);
-  }
-
-  .contacts p {
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 28.8px;
-    color: var(--contact-us-text-color);
-  }
-
-  .contacts-conteiner {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .contacts-conteiner-item {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .contacts-conteiner p.contacts-text-bold {
-    font-size: 22px;
-    font-weight: 600;
-    line-height: 30.8px;
-    color: var(--contact-us-bold-text-color);
-  }
-
-  .contacts-conteiner p.contacts-text-small {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 25.6px;
-    color: var(--contact-us-text-color);
-  }
-
-  .contacts-us-form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    background-color: var(--contact-us-form-background);
-    background-repeat: no-repeat;
-    margin-top: 50px;
-    padding: 40px;
-    border-radius: 8px;
-    width: 100%;
-  }
-
-  .contacts-us-form form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-
-  .contacts-us-form input,
-  .contacts-us-form textarea {
-    box-sizing: border-box;
-    padding: 15px;
-    border: none;
-    border-bottom: 2px solid var(--contact-us-form-border-color);
-    background-color: var(--contact-us-form-input-background-color);
-    font-size: 16px;
-    font-family: var(--text-font-family);
-    font-weight: 400;
-    line-height: 24px;
-    color: var(--contact-us-form-input-text-color);
-    width: 100%;
-  }
-
-  .contacts-us-form input::placeholder,
-  .contacts-us-form textarea::placeholder {
-    color: var(--contact-us-form-input-placeholder-color);
-    opacity: 0.3; /* Змінює прозорість placeholder */
-  }
-
-  .contacts-us-form button {
-    display: inline-block;
-    font-size: 13.2px;
-    text-align: center;
-    color: var(--header-nav-bottom-text-color);
-    font-family: var(--text-font-family);
-    font-weight: 700;
-    padding: 24px 31px;
-    margin: 50px 0 0 0;
-    border: solid 1px var(--header-nav-bottom-border-color);
-    background-color: var(--header-nav-bottom-background-color);
-    cursor: pointer;
-    border-radius: 4px;
-    transition: background-color 0.3s, color 0.3s;
-  }
-
-  /* Стан при наведенні на кнопку */
-  .contacts-us-form button:hover {
-    background-color: var(--header-nav-bottom-hover-background-color);
-    color: var(--header-nav-bottom-hover-text-color);
-  }
-
-  /* Стан при натисканні на кнопку */
-  .contacts-us-form button:active {
-    background-color: var(--header-nav-bottom-active-background-color);
-    color: var(--header-nav-bottom-active-text-color);
   }
 }
 
-@media (min-width: 425px) and (max-width: 1024px) {
+@media (min-width: 426px) and (max-width: 1023px) {
+  .contact-us__container {
+    padding: 55px 24px 90px 24px;
+  }
+
+  .contact-us__title {
+    font-size: 40px;
+    letter-spacing: -0.84px;
+  }
+}
+
+@media (min-width: 750px) {
+  .contact-us__container {
+    flex-direction: row;
+  }
+
+  .contact-us__left-block,
+  .contact-us__right-block {
+    flex-basis: 50%;
+  }
+
+  .contact-us__contacts-item {
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-between;
+  }
+ 
+  .contact-us__contacts-item p {
+    text-align: right;
+  }
+  
 }
 
 @media (min-width: 1024px) {
+  .contact-us {
+    background-position: bottom;
+  }
+
+  .contact-us__container {
+    padding: 55px 24px 110px 24px;
+  }
+
+  .contact-us__title {
+    font-size: 60px;
+    letter-spacing: -1.26px;
+  }
 }
