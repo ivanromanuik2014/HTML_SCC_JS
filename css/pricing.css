@@ -1,80 +1,100 @@
-@media (max-width: 425px) {
-  .pricing-background {
-    background-color: var(--pricing-background-color);
-    padding: 90px 24px;
-  }
+.pricing__background {
+  background-image: url(/img/pricing/pricing-background.webp);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 90px 24px 90px 24px;
+}
 
+.pricing__header {
+  padding: 0 15px;
+  max-width: var(--max-content-size);
+  margin: auto;
+}
+
+.pricing h2 {
+  font-family: var(--title-font-family);
+  color: var(--pricing-title-color);
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.pricing__card-container {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  flex-wrap: wrap;
+}
+
+.pricing-card {
+  display: flex;
+  flex-direction: column;
+  color: var(--pricing-card-text-color);
+  font-family: var(--text-font-family);
+  text-align: center;
+  margin: 50px 0;
+  padding: 20px 5px;
+  gap: 30px;
+}
+
+.pricing-card--kids {
+  background-color: var(--pricing-kids-background-color);
+}
+
+.pricing-card--adult {
+  background-color: var(--pricing-adult-background-color);
+}
+
+.pricing-card--vip {
+  background-color: var(--pricing-vip-background-color);
+}
+
+.pricing-card__title {
+  font-weight: 600;
+}
+
+.pricing-card__big-text {
+  font-weight: 700;
+}
+
+.pricing-card__medium-text {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 25.6px;
+}
+
+.pricing-card__small-text {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 20.04px;
+}
+
+@media (max-width: 425px) {
   .pricing h2 {
     font-size: 40px;
-    font-family: var(--title-font-family);
-    color: var(--pricing-title-color);
-    font-weight: 700;
     letter-spacing: -0.84px;
-    line-height: 44px;
-    margin-bottom: 20px;
-    text-align: center;
   }
 
-  .pricing-card-container {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    color: var(--pricing-card-text-color);
-    font-family: var(--text-font-family);
-    text-align: center;
-    padding: 40px 0;
+  .pricing-card {
+    width: 100%; /* Картки займають всю ширину екрану */
+    margin: 0; /* Прибираємо відступи */
   }
 
-  .pricing-card-container h3 {
+  .pricing-card__title {
     font-size: 22px;
-    font-weight: 600;
     line-height: 30.8px;
   }
 
-  .pricing-card-container p.pricing-big-text {
+  .pricing-card__big-text {
     font-size: 24px;
-    font-weight: 700;
     line-height: 30.8px;
     letter-spacing: -0.48px;
   }
 
-  .pricing-card-container p.pricing-medium-text {
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 25.6px;
-  }
-
-  .pricing-card-container p.pricing-small-text {
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 20.04px;
-  }
-
-  .pricing-card-kids {
-    background-color: var(--pricing-kigs-background-color);
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    padding: 50px 0;
-  }
-
-  .pricing-card-adult {
-    background-color: var(--pricing-adult-background-color);
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    padding: 50px 0;
-  }
-
-  .pricing-card-vip {
-    background-color: var(--pricing-vip-background-color);
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    padding: 50px 0;
-  }
-
-  .pricing-card-img-container {
+  /*TO DO*/
+  .pricing-card__img-container {
     background-color: var(--pricing-img-background-color);
     margin: auto;
     width: 70px;
@@ -86,13 +106,13 @@
     justify-content: center;
   }
 
-  .pricing-card-img-container img {
+  .pricing-card__img-container img {
     object-fit: cover;
     width: 80%;
     height: 80%;
   }
 
-  .pricing-card-bottom a {
+  .pricing-card__bottom a {
     display: inline-block;
     font-size: 13.2px;
     text-align: center;
@@ -108,21 +128,21 @@
     transition: background-color 0.3s, color 0.3s;
   }
 
-  /* Стан при наведенні на кнопку */
-  .pricing-card-bottom a:hover {
+  .pricing-card__bottom a:hover {
     background-color: var(--header-nav-bottom-hover-background-color);
     color: var(--header-nav-bottom-hover-text-color);
   }
 
-  /* Стан при натисканні на кнопку */
-  .pricing-card-bottom a:active {
+  .pricing-card__bottom a:active {
     background-color: var(--header-nav-bottom-active-background-color);
     color: var(--header-nav-bottom-active-text-color);
   }
 }
 
 @media (min-width: 425px) and (max-width: 1024px) {
+  /* Додаткові стилі для середнього екрану можна додати тут */
 }
 
 @media (min-width: 1024px) {
+  /* Додаткові стилі для великого екрану можна додати тут */
 }
