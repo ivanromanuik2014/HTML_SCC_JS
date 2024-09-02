@@ -31,12 +31,14 @@
 .pricing-card {
   display: flex;
   flex-direction: column;
-  color: var(--pricing-card-text-color);
-  font-family: var(--text-font-family);
+  max-width: 400px;
+  justify-items: center;
   text-align: center;
-  margin: 50px 0;
+  margin: 50px auto;
   padding: 20px 5px;
   gap: 30px;
+  color: var(--pricing-card-text-color);
+  font-family: var(--text-font-family);
 }
 
 .pricing-card--kids {
@@ -71,7 +73,54 @@
   line-height: 20.04px;
 }
 
+.pricing-card__img-container {
+  background-color: var(--pricing-img-background-color);
+  margin: auto;
+  width: 90px;
+  padding: 5px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pricing-card__img-container img {
+  object-fit: cover;
+  width: 80%;
+  height: 80%;
+}
+
+.pricing-card__bottom a {
+  display: inline-block;
+  font-size: 13.2px;
+  text-align: center;
+  color: var(--header-nav-bottom-text-color);
+  font-family: var(--text-font-family);
+  font-weight: 700;
+  padding: 24px 31px;
+  border: solid 1px var(--header-nav-bottom-border-color);
+  background-color: var(--header-nav-bottom-background-color);
+  cursor: pointer;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.pricing-card__bottom a:hover {
+  background-color: var(--header-nav-bottom-hover-background-color);
+  color: var(--header-nav-bottom-hover-text-color);
+}
+
+.pricing-card__bottom a:active {
+  background-color: var(--header-nav-bottom-active-background-color);
+  color: var(--header-nav-bottom-active-text-color);
+}
+
 @media (max-width: 425px) {
+  .pricing__card-container {
+    gap: 30px;
+  }
+
   .pricing h2 {
     font-size: 40px;
     letter-spacing: -0.84px;
@@ -92,57 +141,67 @@
     line-height: 30.8px;
     letter-spacing: -0.48px;
   }
+}
 
-  /*TO DO*/
-  .pricing-card__img-container {
-    background-color: var(--pricing-img-background-color);
-    margin: auto;
-    width: 70px;
-    height: 70px;
-    padding: 5px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+@media (min-width: 426px) and (max-width: 1023px) {
+  .pricing h2 {
+    font-size: 50px;
+    letter-spacing: -1.05px;
   }
 
-  .pricing-card__img-container img {
-    object-fit: cover;
-    width: 80%;
-    height: 80%;
+  .pricing-card {
+    width: 100%; /* Картки займають всю ширину екрану */
+    margin: 0; /* Прибираємо відступи */
   }
 
-  .pricing-card__bottom a {
-    display: inline-block;
-    font-size: 13.2px;
-    text-align: center;
-    color: var(--header-nav-bottom-text-color);
-    font-family: var(--text-font-family);
-    font-weight: 700;
-    padding: 24px 31px;
-    border: solid 1px var(--header-nav-bottom-border-color);
-    background-color: var(--header-nav-bottom-background-color);
-    cursor: pointer;
-    border-radius: 4px;
-    text-decoration: none;
-    transition: background-color 0.3s, color 0.3s;
+  .pricing-card__title {
+    font-size: 22px;
+    line-height: 30.8px;
   }
 
-  .pricing-card__bottom a:hover {
-    background-color: var(--header-nav-bottom-hover-background-color);
-    color: var(--header-nav-bottom-hover-text-color);
-  }
-
-  .pricing-card__bottom a:active {
-    background-color: var(--header-nav-bottom-active-background-color);
-    color: var(--header-nav-bottom-active-text-color);
+  .pricing-card__big-text {
+    font-size: 27px;
+    line-height: 34.29px;
+    letter-spacing: -0.54px;
   }
 }
 
-@media (min-width: 425px) and (max-width: 1024px) {
-  /* Додаткові стилі для середнього екрану можна додати тут */
+@media (min-width: 427px) and (max-width: 767px) {
+  .pricing__card-container {
+    gap: 30px;
+  }
 }
 
-@media (min-width: 1024px) {
-  /* Додаткові стилі для великого екрану можна додати тут */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .pricing__card-container {
+    padding: 90px 32px 100px 32px;
+  }
+
+  .pricing-card {
+    width: 33%;
+    margin: 0; /* Прибираємо відступи */
+  }
+
+  .pricing-card--kids {
+    height: 600px;
+    position: relative;
+    top: -25px;
+    padding: 45px 5px;
+  }
+
+  .pricing-card--adult {
+    height: 650px;
+    position: relative;
+    top: -50px;
+    padding: 70px 5px;
+  }
+
+  .pricing-card--vip {
+    height: 550px;
+    margin-bottom: 20px;
+    position: relative;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
 }
