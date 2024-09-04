@@ -8,28 +8,111 @@
 
 .header-nav__container {
   display: flex;
+  justify-items: center;
+  justify-content: space-between;
   padding: 30px 24px;
-  max-width: var( --max-content-size);
+  max-width: var(--max-content-size);
   margin: auto;
+  transition: all 0.3s ease-in;
 }
 
 .header-nav__logo {
-  justify-self: start;
+  float: left;
   height: 78px;
   width: 134px;
   object-fit: contain;
 }
 
-.header-nav__menu {
-  display: flex;
-  justify-content: flex-end;
+.header__menu-btn {
+  display: block;
+  width: auto;
+  height: auto;
+  padding: 35px 10px;
+  margin-left: auto;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+  order: 3;
+}
+
+.header__navicon {
+  float: right;
+  display: block;
+  width: 30px;
+  height: 3px;
+  position: relative;
+  background: var(--header-burder-menu-background-color);
+  cursor: pointer;
+  transition: background 0.2s ease-out;
+}
+
+.header__navicon::before,
+.header__navicon::after {
+  content: '';
   width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  background: var(--header-burder-menu-background-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.header__navicon:before {
+  top: 8px;
+}
+
+.header__navicon:after {
+  top: -8px;
+}
+
+.header-nav__menu {
+  top: -100vh;
+  display: flex;
+  justify-content: center;
+  transition: all 0.4s ease-in-out;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+}
+
+.header-nav.nav-visible .header-nav__container {
+  background: #0c1430;
+  width: 100%;
+  margin: 0;
+  height: 140px;
+}
+
+.header-nav.nav-visible .header-nav__menu {
+  background: #0c1430;
+  width: 102%;
+  height: 100vh;
+  padding: 30px;
+  margin: -30px;
+  top: 140px;
+}
+
+.header-nav.nav-visible .header__navicon {
+  background: transparent;
+}
+
+.header-nav.nav-visible .header__navicon::before {
+  transform: rotate(-45deg);
+}
+
+.header-nav.nav-visible .header__navicon::after {
+  transform: rotate(45deg);
+}
+
+.header-nav.nav-visible .header__navicon::before,
+.header-nav.nav-visible .header__navicon::after {
+  top: 0;
+  background-color: var(--header-burder-menu-background-hover-not-visible-color);
 }
 
 .header-nav__link {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  flex-direction: column;
+  padding-top: 25px;
   gap: 20px;
 }
 
@@ -41,13 +124,13 @@
   color: var(--header-nav-menu-color);
 }
 
-.header-nav__link li::marker {
-  list-style: none; /* Прибирає маркери у сучасних браузерах */
+.header-nav__item {
+  list-style: none;
 }
 
 .header-nav__text {
   padding: 90px 25px;
-  max-width: var( --max-content-size);
+  max-width: var(--max-content-size);
   margin: auto;
 }
 
@@ -102,15 +185,19 @@
   .header-nav__background {
     background-position: 98% 50%;
   }
-
-  .header-nav__menu {
-    display: none;
-  }
 }
 
 @media (min-width: 426px) and (max-width: 1023px) {
   .header-nav__background {
     background-position: 100% 50%;
+  }
+
+  .header-nav__container {
+    padding: 30px 32px 20px 32px;
+  }
+
+  .header-nav__text {
+    padding: 95px 32px 255px 32px;
   }
 
   .header-nav__title h1 {
@@ -119,12 +206,46 @@
     letter-spacing: -1.52px;
   }
 
-  .header-nav__item {
-    list-style: none;
+}
+
+@media (min-width: 768px) {
+  .header-nav__container {
+    padding: 30px 32px 20px 32px;
   }
-  
+
   .header-nav__text {
-    padding: 95px 45px 255px 45px;
+    padding: 95px 32px 250px 32px
+  }
+
+  .header__menu-btn {
+    display: none;
+  }
+
+  .header-nav__menu {
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    height: auto;
+    padding: 0;
+    gap: 30px;
+  }
+
+  .header-nav__link {
+    padding: 0;
+    flex-direction: row;
+  }
+
+  .header__menu-btn {
+    display: none;
+  }
+
+  .header-nav__title h1 {
+    box-sizing: border-box;
+    font-size: 76px;
+    letter-spacing: -1.52px;
   }
 }
 
@@ -133,18 +254,17 @@
     background-position: 100% 50%;
   }
 
+  .header-nav__container {
+    padding: 40px 30px 20px;
+  }
+
+  .header-nav__text {
+    padding: 100px 30px 365px;
+  }
+
   .header-nav__title h1 {
     box-sizing: border-box;
     font-size: 92px;
     letter-spacing: -1.84px;
-  }
-
-  .header-nav__text {
-    padding: 70px 150px 365px 120px;
-  }
-
-  .header-nav__container {
-    display: flex;
-    padding: 30px 150px 15px 120px;
   }
 }

@@ -90,6 +90,12 @@
   height: 80%;
 }
 
+img.pricing-card--shorter-image {
+  object-fit: cover;
+  width: 80%;
+  height: 100%;
+}
+
 .pricing-card__bottom a {
   display: inline-block;
   font-size: 13.2px;

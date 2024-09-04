@@ -23,6 +23,10 @@ img {
   --header-nav-bottom-hover-text-color: #1c2025;
   --header-nav-bottom-active-background-color: #dae436;
   --header-nav-bottom-active-text-color: #1c2025;
+
+  --header-burder-menu-background-color: #020346;
+  --header-burder-menu-background-hover-color: #0bcbd1;
+  --header-burder-menu-background-hover-not-visible-color: #0bcbd1;
   
   --our-number-title-color: #ffffff;
   --our-number-text-color: #ffffff;
