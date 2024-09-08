@@ -27,7 +27,7 @@ img {
   --header-burder-menu-background-color: #020346;
   --header-burder-menu-background-hover-color: #0bcbd1;
   --header-burder-menu-background-hover-not-visible-color: #0bcbd1;
-  
+
   --our-number-title-color: #ffffff;
   --our-number-text-color: #ffffff;
 
@@ -52,6 +52,14 @@ img {
   --pricing-vip-background-color: #00c9e2;
   --pricing-img-background-color: #d1b31b;
 
+  --testimonials-background-color: #f3f3f3;
+  --testimonials-carusel-backgroung-color: #fff;
+  --testimonials-title-color: #1c2025;
+  --testimonials-name-font-color: #1c2025;
+  --testimonials-comment-font-color: #838383;
+  --testimonials-date-font-color: #4149e4;
+  --testimonials-buttom-background-color: #1c2025;
+
   --contact-us-bold-text-color: #1c2025;
   --contact-us-text-color: #838383;
   --contact-us-form-background: #1c2025a8;
@@ -59,7 +67,7 @@ img {
   --contact-us-form-input-background-color: #00000000;
   --contact-us-form-input-text-color: #ffffff;
   --contact-us-form-input-placeholder-color: #ffffff;
-  
+
   --footer-nav-text-color: #1c2025;
   --footer-copyright-text-color: #838383;
 
