@@ -1,5 +1,6 @@
 function init() {
     import("./header.js");
+    import("./index.testimonials-carusel.js");
 }
 
 const totalPartials = document.querySelectorAll('[hx-trigger="load"], [data-hx-trigger="load"]').length;
